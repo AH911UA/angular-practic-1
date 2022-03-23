@@ -1,0 +1,25 @@
+
+<div class="register">
+    <form (ngSubmit)="handleOnRegister()">
+        <div>
+            <label for="login"> login: </label>     
+            <input id="login" 
+                type="text" 
+                [formControl]="login">
+        </div>
+
+        <div>
+            <label for="password"> password: </label>     
+            <input id="password" 
+                type="password" 
+                [formControl]="password">
+        </div>
+
+        <div>
+            <input type="submit" 
+                value="register"
+                [disabled]="!disabled"
+            >
+        </div>
+    </form>
+</div>
