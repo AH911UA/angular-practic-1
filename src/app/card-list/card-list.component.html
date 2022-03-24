@@ -1,0 +1,10 @@
+<div class="container">
+    <h2>Drinks</h2>
+
+    <div class="card_list">
+        <app-card 
+            *ngFor="let drink of drinks"
+            [drink]="drink"
+        ></app-card>
+    </div>
+</div>

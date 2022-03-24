@@ -33,5 +33,9 @@
                 color: var(--secondary-dark-color);
             }
         }
+
+        & .active {
+            color: var(--secondary-dark-color)
+        }
     }
 }

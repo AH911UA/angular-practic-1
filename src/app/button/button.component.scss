@@ -1,0 +1,21 @@
+.btn {
+    min-width: 100px;
+    padding: 5px 10px;
+
+    border: none;
+    border-radius: 5px;
+
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+
+    transition: 0.3s;
+    
+}
+
+.secondary-btn {
+    &:hover {
+        background-color: var(--secondary-dark-color);
+        color: var(--primary-dark-txt-color);
+    }
+}

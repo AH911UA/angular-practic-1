@@ -3,9 +3,8 @@
     <span>lo</span>go
   </span>
   <nav>
-    <a routerLink="/">Home</a>
-    <a routerLink="/todos">Todos</a>
-    <a routerLink="/auth/login">Login</a>
-    <a routerLink="/auth/register">Register</a>
+    <a 
+      ngClass="{{currRoute === route.path ? 'active' : ''}} "
+      (click)="handleClick(route.path)" *ngFor="let route of routes" routerLink="{{route.path}}">{{route.name}}</a>
   </nav>
 </header>

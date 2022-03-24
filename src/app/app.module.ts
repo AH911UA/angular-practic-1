@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {HttpClientModule} from '@angular/common/http';
 import {Routes, RouterModule} from '@angular/router'
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +11,9 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CardListComponent } from './card-list/card-list.component';
+import { CardComponent } from './card/card.component';
+import { ButtonComponent } from './button/button.component';
 
 
 @NgModule({
@@ -20,9 +23,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     TodosComponent,
     LoginComponent,
     RegisterComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    CardListComponent,
+    CardComponent,
+    ButtonComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     RouterModule,

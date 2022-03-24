@@ -18,3 +18,12 @@ body {
 
     --warning-color: red;
 }
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.wrapper {
+    background-color: var(--primary-dark-bc-color);
+    min-height: calc(100vh - var(--height-header)); 
+}
