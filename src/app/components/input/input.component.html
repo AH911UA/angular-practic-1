@@ -1,0 +1,8 @@
+<input class="input" 
+    [type]="type" 
+    [style]="styles"
+    
+    [ngModel]="value" 
+    (ngModelChange)="onChange($event)" 
+    (blur)="onTouched()"
+>

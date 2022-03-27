@@ -25,27 +25,11 @@
         &:focus {
             outline: 2px dotted var(--primary-dark-txt-color);
         }
-      }
-
-      [type='submit'] {
-        position: relative;
-        cursor: pointer;
-        display: block;
-        margin-left: auto;
-        text-transform: capitalize;
-
-        &:hover {
-          box-shadow: inset 0 0 30px var(--primary-dark-color);
-        }
-
-        &:active {
-            top: 2px;
-        }
-      }
+      } 
     }
   }
 }
 
 .ng-invalid {
-    outline: 2px dotted var(--warning-color) !important;
+    // outline: 2px dotted var(--warning-color) !important;
 }

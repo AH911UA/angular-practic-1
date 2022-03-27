@@ -1,10 +1,19 @@
 <div class="container">
-    <h2>Drinks</h2>
 
     <div class="card_list">
-        <app-card 
-            *ngFor="let drink of drinks"
-            [drink]="drink"
-        ></app-card>
+        <form class="card_list_header" 
+            [formGroup]="drinkSearch"
+            (ngSubmit)="searchOnChange()"
+            >
+            <h2>Drinks:</h2>
+            <app-input 
+                [type]="'search'"
+                formControlName="drinkName"
+                ></app-input>
+        </form>
+
+        <div class="card_list_data">
+            <app-card *ngFor="let drink of drinks" [drink]="drink"></app-card>
+        </div>
     </div>
 </div>

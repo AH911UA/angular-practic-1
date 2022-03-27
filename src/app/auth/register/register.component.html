@@ -1,25 +1,19 @@
-
 <div class="register">
     <form (ngSubmit)="handleOnRegister()">
         <div>
-            <label for="login"> login: </label>     
-            <input id="login" 
-                type="text" 
-                [formControl]="login">
+            <label for="login"> login: </label>
+            <app-input id="login" [type]="'text'" [styles]="{width: '200px'}" [formControl]="login"></app-input>
         </div>
 
         <div>
-            <label for="password"> password: </label>     
-            <input id="password" 
-                type="password" 
-                [formControl]="password">
+            <label for="password"> password: </label>
+            <app-input id="password" [type]="'password'" [styles]="{width: '200px'}" [formControl]="password"></app-input>
         </div>
 
         <div>
-            <input type="submit" 
-                value="register"
-                [disabled]="!disabled"
-            >
+            <app-button value="register" [disabled]="!disabled"
+                [styles]="{position: 'relative',display: 'block','margin-left': 'auto'}"
+            ></app-button>
         </div>
     </form>
 </div>

@@ -9,7 +9,9 @@ export class ButtonComponent implements OnInit {
 
   @Input() value: string | undefined;
   @Input() type: string | undefined;
-
+  @Input() disabled: boolean | undefined;
+  @Input() styles: {} | undefined;
+  
   constructor() { }
 
   ngOnInit(): void {

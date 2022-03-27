@@ -12,8 +12,10 @@ import { RegisterComponent } from './auth/register/register.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CardListComponent } from './card-list/card-list.component';
-import { CardComponent } from './card/card.component';
-import { ButtonComponent } from './button/button.component';
+import { CardComponent } from './card-list/card/card.component';
+import { ButtonComponent } from './components/button/button.component';
+import { InputComponent } from './components/input/input.component';
+import { TodoComponent } from './todos/todo/todo.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { ButtonComponent } from './button/button.component';
     NotFoundComponent,
     CardListComponent,
     CardComponent,
-    ButtonComponent
+    ButtonComponent,
+    InputComponent,
+    TodoComponent
   ],
   imports: [
     HttpClientModule,

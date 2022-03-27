@@ -1,0 +1,9 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+
+    .todos {
+        padding: 50px 0;
+        color: var(--primary-dark-txt-color);
+    }
+}

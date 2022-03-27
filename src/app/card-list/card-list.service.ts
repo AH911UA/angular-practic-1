@@ -9,11 +9,11 @@ import { Observable } from 'rxjs';
 })
 export class DrinksService {
 
-  private configUrl = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a';
+  private configUrl = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
 
   constructor(private http: HttpClient) { }
 
-  public getDrinks():Observable<DrinksType> {
-    return this.http.get<DrinksType>(this.configUrl)
+  public getDrinks(name: string = 'margarita'):Observable<DrinksType> {
+    return this.http.get<DrinksType>(this.configUrl + name);
   }
 }
